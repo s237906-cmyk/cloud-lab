@@ -1,16 +1,13 @@
 services:
   backend:
-    build: ./server
-    container_name: mern-backend
+    image: tovy541/mern-backend:1.0
     ports:
       - "5000:5000"
     environment:
       MONGODB_URI: ${MONGODB_URI}
+      PORT: 5000
 
   frontend:
-    build: ./client
-    container_name: mern-frontend
+    image: tovy541/mern-frontend:1.0
     ports:
       - "3000:3000"
-    depends_on:
-      - backend

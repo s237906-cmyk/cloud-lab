@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const API_URL = "http://localhost:5000/api/students";
+const API_URL = "https://scaling-space-bassoon-p7wx4rpgwq439px4-5000.app.github.dev/api/students";
 
 function App() {
   const [students, setStudents] = useState([]);
@@ -133,7 +133,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Quản lý sinh viên</h1>
+      <h1>Quản lý sinh viên MERN - Version 2.0</h1>
 
       <form onSubmit={handleSubmit}>
         <input
