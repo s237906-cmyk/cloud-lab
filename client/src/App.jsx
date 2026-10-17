@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const API_URL = "https://scaling-space-bassoon-p7wx4rpgwq439px4-5000.app.github.dev/api/students";
+const API_URL = "https://mern-backend-237906.onrender.com/api/students";
 
 function App() {
   const [students, setStudents] = useState([]);
